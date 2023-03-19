@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "yandex_algos-practice-3"
+version = "0.1.0"
+description = "Конспекты и решения курса Тренировки по алгоритмам 3.0 от Яндекс"
+authors = ["Ilia Filimonov <https://github.com/IsFilimonov>"]
+license = ["CC BY-NC-SA 4.0" <https://github.com/IsFilimonov/1N_2023_yandex_algos-practice-3/blob/main/LICENSE.md>]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+checker = "checker.main.py:start"
+
+[tool.poetry.group.dev.dependencies]
+debugpy = "^1.6.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
